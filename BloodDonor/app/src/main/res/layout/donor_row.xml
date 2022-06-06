@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="donor"
+            type="com.example.blooddonor.entities.DonorModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/row_itemView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:layout_margin="6dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="@{donor.name}"
+                android:textSize="30sp"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/contactTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTV"
+                android:layout_marginTop="3dp"
+                android:textSize="20sp"
+                android:text="@{donor.phoneNumber}"
+                android:textStyle="bold"
+                tools:text="Phone number" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/callBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="23dp"
+                android:layout_toEndOf="@+id/contactTV"
+                android:text="Call Now"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/groupTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="21dp"
+                android:text="@{donor.bloodGroup}"
+                android:textSize="40sp"
+                tools:text="A+" />
+
+            <TextView
+                android:id="@+id/genderTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactTV"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="15sp"
+                tools:text="Gender" />
+
+            <TextView
+                android:id="@+id/ageTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactTV"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/genderTV"
+                android:textSize="15sp"
+                tools:text="Age" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

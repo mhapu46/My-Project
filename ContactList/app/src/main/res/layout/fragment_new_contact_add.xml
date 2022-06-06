@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/material_dynamic_secondary60"
+        tools:context=".NewContactFragment">
+
+        <EditText
+            android:id="@+id/inputContactNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contact name"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/inputPhoneET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter phone number"
+            android:layout_margin="10dp"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/inputEmailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="abc@gmail.com"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/inputAddressET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mirpur, Dhaka"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/cardview_shadow_start_color"
+            android:text="@string/save"
+            android:layout_margin="25sp" />
+    </LinearLayout>
+</layout>

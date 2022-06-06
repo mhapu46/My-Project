@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Spinner
+            android:id="@+id/from"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="151dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/toTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: BDT"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="36dp"
+            tools:layout_editor_absoluteY="247dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/fromTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="84dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            tools:layout_editor_absoluteX="253dp"
+            tools:layout_editor_absoluteY="250dp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/calculatedTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="0.00"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="311dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
